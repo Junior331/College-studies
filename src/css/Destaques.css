@@ -1,0 +1,40 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.itemDestaq {
+  width: 430px;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Titles {
+  margin-bottom: -25px;
+  list-style-type: katakana;
+}
+.One {
+  margin: 0px 65px 0px 0px;
+}
+
+.Two {
+  margin: 0px 31px 0px 30px;
+}
+
+.Three {
+  margin: 0px 48px 0px 0px;
+}
+
+.itemDesProd,
+.Titles {
+  color: #2255aa;
+  text-align: start;
+  list-style-type: square;
+}
+.precoVelho {
+  text-decoration-line: line-through;
+}

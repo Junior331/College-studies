@@ -1,0 +1,57 @@
+fieldset {
+  color: #2255aa;
+  background: #ffffcc;
+  padding: 20px 10px 0px 10px;
+}
+.fsDados {
+  width: 510px;
+}
+.content input,
+textarea {
+  width: 400px;
+  margin-right: 25px;
+}
+.content label {
+  float: left;
+}
+.content div {
+  display: flex;
+  padding: 0px 0px 20px 0px;
+  justify-content: space-between;
+}
+#endereço {
+  width: 370px;
+  height: 45px;
+  resize: none;
+  margin-right: 55px;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meiaLinEsq {
+  width: 220px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+.fsDir {
+  width: 220px;
+  margin: 0px 0px 6px 0px;
+}
+.fsDir input {
+  width: 35px;
+}
+.fsDir div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 0px 10px 0px;
+}
+.meiaLinEsq div {
+  display: flex;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Compras.css" />
+    <link rel="stylesheet" href="../css/OtakuOnTitan.css" />
+    <link
+      rel="shortcut icon"
+      href="../assents/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <title>Compras</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <img
+          class="imgLogo"
+          src="../assents/img/OtakuOnTitan_topo.png"
+          alt="logo"
+        />
+        <nav>
+          <a href="../../OtakuOnTitan.html">inicial</a>
+          <a href="./Destaques.html" target="_blank">destaques</a>
+          <a href="./Catalogo.html" target="_blank">catalogo</a>
+          <a href="#">compras</a>
+        </nav>
+      </header>
+      <form action="./Compras.html">
+        <fieldset class="fsDados">
+          <legend>Dados Pessoais</legend>
+          <div class="content">
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" />
+            </div>
+            <div>
+              <label for="endereço">Endereço:</label>
+              <textarea id="endereço"></textarea>
+            </div>
+          </div>
+          <div class="container">
+            <div class="meiaLinEsq">
+              <div>
+                <label for="nome">CPF:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  onkeypress="$(this).mask('000.000.000-00');"
+                />
+              </div>
+              <div>
+                <label for="nome">Telefone:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  onkeypress="$(this).mask('(00) 0000-0000');"
+                />
+              </div>
+              <div>
+                <label for="nome">Celular:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  onkeypress="$(this).mask('(00) 00000-0000');"
+                />
+              </div>
+            </div>
+            <div class="meiaLinDir">
+              <fieldset class="fsDir">
+                <legend>Nascimento</legend>
+                <div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      onkeypress="$(this).mask('00');"
+                    />/
+                    <input
+                      type="text"
+                      class="form-control"
+                      onkeypress="$(this).mask('00');"
+                    />/
+                    <input
+                      type="text"
+                      class="form-control"
+                      onkeypress="$(this).mask('0000');"
+                    />
+                </div>
+              </fieldset>
+              <fieldset class="fsDir">
+                <legend>Nascimento</legend>
+                <div>
+                    <input type="radio" name="idade">Mas</input>
+                    <input type="radio" name="idade">Fem</input>
+                    <input type="radio" name="idade">Outro</input>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <footer>
+        Avenida akihabara, 123 / Tel:(21)91234-5678 / contato@manganime.com.br
+      </footer>
+    </main>
+  </body>
+</html>
