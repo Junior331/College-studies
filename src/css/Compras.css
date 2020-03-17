@@ -22,10 +22,9 @@ textarea {
 #endereço {
   width: 370px;
   height: 45px;
-  resize: none;
   margin-right: 55px;
 }
-input {
+input,select {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -43,15 +42,88 @@ input {
   width: 220px;
   margin: 0px 0px 6px 0px;
 }
-.fsDir input {
-  width: 35px;
+.fsDir .data {
+  width: 50px;
+  padding: 0px 5px;
+  text-align: center;
 }
 .fsDir div {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: -10px 0px 10px 0px;
+  justify-content: space-around;
 }
-.meiaLinEsq div {
+.fsEsq{
+  float: left;
+  margin: 0px 0px 6px 0px;
+}
+.fsEsq .cartao {
+  margin: -10px 0px 10px 0px;
+}
+.meiaLinEsq .content-form {
   display: flex;
+  padding: 10px;
+  justify-content: space-between;
+
+}
+
+.form-control{
+  right: 20px;
+  width: 105px;
+  height: 20px;
+  position: relative;
+  text-align: center;
+}
+.content-form div{
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.info{
+  width: 90px;
+}
+.btnCompra{
+  width: 65px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background: #f9f9f9f5;
+}
+.validade, .numero{
+  padding: 15px 0px;
+}
+.num-cartao{
+  width: 130px;
+
+}
+.validade input {
+  width: 45px;
+  text-align: center;
+}
+.validade input:nth-child(3) {
+  width: 65px;
+}
+.container-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-valor{
+  display: flex;
+  margin-right: 30px;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#sub-total{
+  margin: 0;
+  width: 150px;
+  height: 125px;
+}
+.valor-total{
+  width: 100px;
+  margin-top: 20px;
+}
+.botoes{
+  padding: 3px 10px;
+  margin: 10px 10px 10px 0px;
 }

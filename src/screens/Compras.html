@@ -45,66 +45,146 @@
           </div>
           <div class="container">
             <div class="meiaLinEsq">
-              <div>
+              <div class="content-form">
                 <label for="nome">CPF:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  onkeypress="$(this).mask('000.000.000-00');"
-                />
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    onkeypress="$(this).mask('000.000.000-00');"
+                  />
+                </div>
               </div>
-              <div>
+              <div class="content-form">
                 <label for="nome">Telefone:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  onkeypress="$(this).mask('(00) 0000-0000');"
-                />
+                <div>
+                  <input
+                    type="text"
+                    class="form-control info"
+                    onkeypress="$(this).mask('(00) 0000-0000');"
+                    />
+                </div>
               </div>
-              <div>
+              <div class="content-form">
                 <label for="nome">Celular:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  onkeypress="$(this).mask('(00) 00000-0000');"
-                />
+                <div class="">
+                  <input
+                    type="text"
+                    class="form-control info"
+                    onkeypress="$(this).mask('(00) 00000-0000');"
+                  />
+                </div>
               </div>
             </div>
             <div class="meiaLinDir">
               <fieldset class="fsDir">
-                <legend>Nascimento</legend>
+                <legend>Nascimento:</legend>
                 <div>
                     <input
-                      type="text"
-                      class="form-control"
+                      type="number"
+                      class="data"
                       onkeypress="$(this).mask('00');"
                     />/
                     <input
-                      type="text"
-                      class="form-control"
+                      type="number"
+                      class="data"
                       onkeypress="$(this).mask('00');"
                     />/
                     <input
-                      type="text"
-                      class="form-control"
+                      type="number"
+                      class="data"
                       onkeypress="$(this).mask('0000');"
                     />
                 </div>
               </fieldset>
               <fieldset class="fsDir">
-                <legend>Nascimento</legend>
+                <legend>Genero:</legend>
                 <div>
-                    <input type="radio" name="idade">Mas</input>
-                    <input type="radio" name="idade">Fem</input>
-                    <input type="radio" name="idade">Outro</input>
+                    <input type="radio" name="mas">Mas</input>
+                    <input type="radio" name="fem">Fem</input>
+                    <input type="radio" name="outro">Outro</input>
                 </div>
               </fieldset>
             </div>
           </div>
         </fieldset>
       </form>
-      <footer>
-        Avenida akihabara, 123 / Tel:(21)91234-5678 / contato@manganime.com.br
+      <form action="">
+        <fieldset class="fsDados">
+          <legend>Seleção de Produtos e Pagamento:</legend>
+          <label>Produtos:</label>
+          <div>
+            <select name="" id="">
+              <option value="-----">-----</option>
+              <optgroup label="Anime">
+                <option value="Death Note -DVD- Completo">Death Note -DVD- Completo</option>
+                <option value="Naruto Shippuden T01 Box 01">Naruto Shippuden T01 Box 01</option>
+                <option value="Naruto Shippuden T01 Box 02">Naruto Shippuden T01 Box 02</option>
+              </optgroup>
+              <optgroup label="Mangá">
+                <option value="mercedes">Naruto Gold -55 Vol</option>
+                <option value="Attack on Titan -Vol 1-4">Attack on Titan -Vol 1-4</option>
+                <option value="Attack on Titan -Vol 5-8">Attack on Titan -Vol 5-8</option>
+                <option value="Naruto Box P01 Vol 1-27">Naruto Box P01 Vol 1-27</option>
+              </optgroup>
+              <optgroup label="action Figure">
+                <option value="Naruto Shippuden -PVC">Naruto Shippuden -PVC</option>
+                <option value="Ryuk -Death Note _PVC">Ryuk -Death Note _PVC</option>
+              </optgroup>
+            </select>
+            <input type="button" value="Comprar" class="btnCompra"/>
+          </div>
+          <div class="container-form">
+            <fieldset class="fsEsq">
+              <legend>Dados do Cartão:</legend>
+              <fieldset class="">
+                <legend>Bandeira:</legend>
+                  <div class="cartao">
+                    <input type="radio" accept="" name="visa">Visa</input>
+                    <input type="radio" name="master">Master</input>
+                    <input type="radio" name="amex">Amex</input>
+                  </div>
+                </fieldset>
+                <div class="validade">
+                  <label>Validade:</label>
+                  <input
+                  type="number"
+                  class="data"
+                        onkeypress="$(this).mask('0');"
+                      /> /
+                      <input
+                      type="number"
+                      class="data"
+                      onkeypress="$(this).mask('0000');"
+                      />
+                    </div>
+                    <div class="numero">
+                      <label>numero:</label>
+                      <input
+                      type="number"
+                      class="data num-cartao"
+                      />
+                    </div>
+                  </fieldset>            
+                  <div class="form-valor">
+                  <textarea id="sub-total"></textarea>
+                  <div>
+                    <label>Valor: R$</label>
+                    <input
+                    type="number"
+                    class="data valor-total"
+                    />
+                  </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div>
+                <input type="submit" value="Enviar" class="botoes"/>
+                <input type="button" value="Limpar" class="botoes"/>
+              </div>
+            </form>
+            <footer>
+              Avenida akihabara, 123 / Tel:(21)91234-5678 / contato@manganime.com.br
       </footer>
     </main>
   </body>
