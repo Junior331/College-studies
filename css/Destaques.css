@@ -1,9 +1,3 @@
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .itemDestaq {
   width: 430px;
   height: 120px;
@@ -13,28 +7,30 @@ section {
   justify-content: flex-end;
 }
 
+.ContainerTitles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 590px;
+}
+
 .Titles {
-  margin-bottom: -25px;
+  margin-left: 25px;
   list-style-type: katakana;
-}
-.One {
-  margin: 0px 65px 0px 0px;
-}
-
-.Two {
-  margin: 0px 31px 0px 30px;
-}
-
-.Three {
-  margin: 0px 48px 0px 0px;
-}
-
-.itemDesProd,
-.Titles {
   color: #2255aa;
   text-align: start;
-  list-style-type: square;
 }
+
+.Titles li a {
+  color: #EE0000;
+  text-decoration: none;
+}
+
 .precoVelho {
   text-decoration-line: line-through;
+}
+
+footer {
+  margin-top: 10px;
 }
