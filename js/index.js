@@ -1,10 +1,36 @@
-var imagens = [
-    "https://prodimage.images-bn.com/pimages/9781632366993_p0_v1_s550x406.jpg"
- ];
- 
- function trocar(){
-    var img = document.getElementById("test");
-    var img_src = img.src;
-    var img_idx = imagens.indexOf(img_src);
-    img.src = imagens[ img_idx == imagens.length-1 ? 0 : img_idx+1 ];
- }
+const products = {
+  Temporada1Box1: {
+    image:
+      "../assets/img/AOT1-4A300.jpg",
+    price: "130,00",
+  },
+  Temporada1Box2: {
+    image: "../assets/img/AOT1-4A300.jpg",
+    price: "130,00",
+  },
+  Volumes1_4: {
+    image:
+      "../assets/img/AOT1-4A300.jpg",
+    price: "130,00",
+  },
+  Volumes5_8: {
+    image:
+      "../assets/img/AOT1-4A300.jpg",
+    price: "130,00",
+  },
+  BoxParte1_Vol1_27_inglês: {
+    image: "../assets/img/AOT1-4A300.jpg",
+    price: "130,00",
+  },
+  RyoukemPVC: {
+    image:
+      "../assets/img/AOT1-4A300.jpg",
+    price: "130,00",
+  },
+};
+
+function changeProduct(productName) {
+  const product = products[productName];
+  var imgElement = document.getElementById("image_product");
+  imgElement.src = product.image;
+}
