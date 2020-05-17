@@ -31,6 +31,10 @@ const products = {
 
 function changeProduct(productName) {
   const product = products[productName];
-  var imgElement = document.getElementById("image_product");
+
+  const imgElement = document.getElementById("image_product");
   imgElement.src = product.image;
+
+  const priceElement = document.getElementById("price_product");
+  priceElement.textContent = "Preço: R$ " + product.price;
 }

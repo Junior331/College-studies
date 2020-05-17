@@ -35,3 +35,9 @@ caption {
   height:  180px;
   border: solid 3px #226699;
 }
+
+.product-price {
+  margin-top: 10px;
+  color: #EE0000;
+  font-weight: bold;
+}
