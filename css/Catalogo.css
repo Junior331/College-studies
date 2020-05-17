@@ -30,3 +30,8 @@ caption {
   color: #005599;
   background: #ffcc77;
 }
+.testImg{
+  width:  180px;
+  height:  180px;
+  border: solid 3px #226699;
+}
