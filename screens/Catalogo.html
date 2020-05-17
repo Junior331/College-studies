@@ -37,62 +37,113 @@
         <tr>
           <th>Categoria</th>
           <th>Produto</th>
-          <th colspan="2">Descrição</th>
+          <th>Descrição</th>
           <th>Foto/Preço</th>
         </tr>
         <tbody>
           <tr>
-            <td rowspan="6">Anime</td>
-            <td rowspan="4">Naruto Shippuden</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <li onclick="changeProduct('Temporada1Box1')"><a href="#">Temporada 1 Box 1</a></li>
+            <td rowspan="2">Anime</td>
+            <td rowspan="2">Naruto Shippuden</td>
+            <td>
+              <li onclick="changeProduct('Temporada1Box1')">
+                <a href="#">Temporada 1 Box 1</a>
+              </li>
             </td>
-            <td colspan="3">
+
+            <td rowspan="6">
               <img
                 id="image_product"
                 class="testImg"
                 src="../assets/img/vazio.jpg"
                 alt="iamgem produto"
               />
-              <p id="price_product" class="product-price">Preço: R$ </p>
+              <p id="price_product" class="product-price">Preço: R$</p>
             </td>
           </tr>
+
+          <!-- <tr>
+            <td>
+              <img
+                id="image_product"
+                class="testImg"
+                src="../assets/img/vazio.jpg"
+                alt="iamgem produto"
+              />
+              <p id="price_product" class="product-price">Preço: R$</p>
+            </td>
+          </tr> -->
+
           <tr>
-            <td colspan="2">
-              <li onclick="changeProduct('Temporada1Box2')"><a href="#">Temporada 1 Box 2</a></li>
+            <td>
+              <li onclick="changeProduct('Temporada1Box2')">
+                <a href="#">Temporada 1 Box 2</a>
+              </li>
             </td>
           </tr>
-        </tbody>
-        <tbody>
+
           <tr>
-            <td rowspan="4">Mangá</td>
+            <td rowspan="3">Mangá</td>
             <td rowspan="2">Attack on Titan</td>
-            <td colspan="2">
-              <li onclick="changeProduct('Volumes1_4')"><a href="#">Volumes 1-4</a></li>
+            <td>
+              <li onclick="changeProduct('Volumes1_4')">
+                <a href="#">Volumes 1-4</a>
+              </li>
             </td>
           </tr>
+
           <tr>
-            <td colspan="2">
-              <li onclick="changeProduct('Volumes5_8')"><a href="#">Volumes 5-8</a></li>
+            <td>
+              <li onclick="changeProduct('Volumes5_8')">
+                <a href="#">Volumes 5-8</a>
+              </li>
             </td>
           </tr>
+
           <tr>
-            <td rowspan="2">Naruto</td>
-            <td colspan="2">
-              <li onclick="changeProduct('BoxParte1_Vol1_27_inglês')"><a href="#">Box Parte 1 - Vol 1-27 - inglês</a></li>
+            <td>Naruto</td>
+            <td>
+              <li onclick="changeProduct('BoxParte1_Vol1_27_inglês')">
+                <a href="#">Box Parte 1 - Vol 1-27 - inglês</a>
+              </li>
             </td>
           </tr>
-        </tbody>
-        <tbody>
+
           <tr>
-            <td rowspan="">Colecionáveis</td>
-            <td rowspan="">Death Note</td>
-            <td colspan="2" rowspan="4">
-              <li onclick="changeProduct('RyoukemPVC')"><a href="#">Ryouk em PVC</a></li>
+            <td>Colecionáveis</td>
+            <td>Death Note</td>
+            <td>
+              <li onclick="changeProduct('RyoukemPVC')">
+                <a href="#">Ryouk em PVC</a>
+              </li>
             </td>
           </tr>
+
+          <!-- <tr>
+            <td>
+              <li onclick="changeProduct('Volumes5_8')">
+                <a href="#">Volumes 5-8</a>
+              </li>
+            </td>
+          </tr>
+
+          <tr>
+            <td >Naruto</td>
+            <td>
+              <li onclick="changeProduct('BoxParte1_Vol1_27_inglês')">
+                <a href="#">Box Parte 1 - Vol 1-27 - inglês</a>
+              </li>
+            </td>
+          </tr>
+          
+          <tr>
+            <td> Colecionáveis</td>
+            <td> Death Note</td>
+            <td >
+              <li onclick="changeProduct('RyoukemPVC')">
+                <a href="#">Ryouk em PVC</a>
+              </li>
+            </td>
+          </tr> -->
         </tbody>
       </table>
       <footer>
