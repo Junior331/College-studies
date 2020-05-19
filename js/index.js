@@ -34,3 +34,34 @@ function changeProduct(productName) {
   const priceElement = document.getElementById("price_product");
   priceElement.textContent = "Preço: R$ " + product.price;
 }
+
+function validar() {
+  var form = document.forms["formulario"];
+  var erro = false;
+  var cpf = form.cpf.value;
+  if (cpf.length < 11) {
+    alert("CPF tem de ter 11 dígitos");
+    cpf.focus();
+    erro = true;
+  }
+  somenteNumeros();
+}
+
+// function somenteNumeros(e) {
+//   var charCode = e.charCode ? e.charCode : e.keyCode;
+//   // charCode 8 = backspace
+//   // charCode 9 = tab
+//   if (charCode != 8 && charCode != 9) {
+//       // charCode 48 equivale a 0
+//       // charCode 57 equivale a 9
+//       if (charCode < 48 || charCode > 57) {
+//           return false;
+//       }
+//   }
+// }
+function somenteNumeros() {
+  var campo = document.getElementById("cpf").value;
+  if (campo.includes(2)) {
+    alert("apenas numeros");
+  }
+}

@@ -28,154 +28,157 @@
           <a href="#">compras</a>
         </nav>
       </header>
-      <form action="./Compras.html">
-        <fieldset class="fsDados">
-          <legend>Dados Pessoais</legend>
-          <div class="content">
-            <div>
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" />
-            </div>
-            <div>
-              <label for="endereço">Endereço:</label>
-              <textarea id="endereço"></textarea>
-            </div>
-          </div>
-          <div class="container">
-            <div class="meiaLinEsq">
-              <div class="content-form">
-                <label for="nome">CPF:</label>
-                <div>
-                  <input
-                    type="number"
-                    class="form-control"
-                  />
-                </div>
+        <form name="formulario" action="./Compras.html">
+          <fieldset class="fsDados">
+            <legend>Dados Pessoais</legend>
+            <div class="content">
+              <div>
+                <label for="nome">Nome:</label>
+                <input name="nome" type="text" id="nome" />
               </div>
-              <div class="content-form">
-                <label for="nome">Telefone:</label>
-                <div>
-                  <input
-                    type="number"
-                    class="form-control info"
+              <div>
+                <label for="endereço">Endereço:</label>
+                <textarea id="endereço"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <div class="meiaLinEsq">
+                <div class="content-form">
+                  <label for="nome">CPF:</label>
+                  <div>
+                    <input
+                      type="cpf"
+                      class="form-control"
+                      id="protocolo"
+                      name="protocolo"
+                      onkeypress="somenteNumeros()"
                     />
+                  </div>
+                </div>
+                <div class="content-form">
+                  <label for="nome">Telefone:</label>
+                  <div>
+                    <input type="number" class="form-control info" />
+                  </div>
+                </div>
+                <div class="content-form">
+                  <label for="nome">Celular:</label>
+                  <div class="">
+                    <input type="number" class="form-control info" />
+                  </div>
                 </div>
               </div>
-              <div class="content-form">
-                <label for="nome">Celular:</label>
-                <div class="">
-                  <input
-                    type="number"
-                    class="form-control info"
-                  />
-                </div>
+              <div class="meiaLinDir">
+                <fieldset class="fsDir">
+                  <legend>Nascimento:</legend>
+                  <div>
+                    <input type="number" class="data" />/
+                    <input type="number" class="data" />/
+                    <input type="number" class="data" />
+                  </div>
+                </fieldset>
+                <fieldset class="fsDir">
+                  <legend>Genero:</legend>
+                  <div>
+                    <input type="radio" name="mas" />
+                    <label for="Mas">Mas</label>
+                    <input type="radio" name="fem" />
+                    <label for="Fem">Fem</label>
+                    <input type="radio" name="outro" />
+                    <label for="Outro">Outro</label>
+                  </div>
+                </fieldset>
               </div>
             </div>
-            <div class="meiaLinDir">
-              <fieldset class="fsDir">
-                <legend>Nascimento:</legend>
-                <div>
-                    <input
-                      type="number"
-                      class="data"
-                    />/
-                    <input
-                      type="number"
-                      class="data"
-                    />/
-                    <input
-                      type="number"
-                      class="data"
-                    />
-                </div>
-              </fieldset>
-              <fieldset class="fsDir">
-                <legend>Genero:</legend>
-                <div>
-                    <input type="radio" name="mas">Mas</input>
-                    <input type="radio" name="fem">Fem</input>
-                    <input type="radio" name="outro">Outro</input>
-                </div>
-              </fieldset>
+          </fieldset>
+
+          <fieldset class="fsDados">
+            <legend>Seleção de Produtos e Pagamento:</legend>
+            <label>Produtos:</label>
+            <div>
+              <select name="" id="">
+                <option value="-----">-----</option>
+                <optgroup label="Anime">
+                  <option value="Death Note -DVD- Completo"
+                    >Death Note -DVD- Completo</option
+                  >
+                  <option value="Naruto Shippuden T01 Box 01"
+                    >Naruto Shippuden T01 Box 01</option
+                  >
+                  <option value="Naruto Shippuden T01 Box 02"
+                    >Naruto Shippuden T01 Box 02</option
+                  >
+                </optgroup>
+                <optgroup label="Mangá">
+                  <option value="mercedes">Naruto Gold -55 Vol</option>
+                  <option value="Attack on Titan -Vol 1-4"
+                    >Attack on Titan -Vol 1-4</option
+                  >
+                  <option value="Attack on Titan -Vol 5-8"
+                    >Attack on Titan -Vol 5-8</option
+                  >
+                  <option value="Naruto Box P01 Vol 1-27"
+                    >Naruto Box P01 Vol 1-27</option
+                  >
+                </optgroup>
+                <optgroup label="action Figure">
+                  <option value="Naruto Shippuden -PVC"
+                    >Naruto Shippuden -PVC</option
+                  >
+                  <option value="Ryuk -Death Note _PVC"
+                    >Ryuk -Death Note _PVC</option
+                  >
+                </optgroup>
+              </select>
+              <input type="button" value="Comprar" class="btnCompra" />
             </div>
-          </div>
-        </fieldset>
-      </form>
-      <form action="">
-        <fieldset class="fsDados">
-          <legend>Seleção de Produtos e Pagamento:</legend>
-          <label>Produtos:</label>
-          <div>
-            <select name="" id="">
-              <option value="-----">-----</option>
-              <optgroup label="Anime">
-                <option value="Death Note -DVD- Completo">Death Note -DVD- Completo</option>
-                <option value="Naruto Shippuden T01 Box 01">Naruto Shippuden T01 Box 01</option>
-                <option value="Naruto Shippuden T01 Box 02">Naruto Shippuden T01 Box 02</option>
-              </optgroup>
-              <optgroup label="Mangá">
-                <option value="mercedes">Naruto Gold -55 Vol</option>
-                <option value="Attack on Titan -Vol 1-4">Attack on Titan -Vol 1-4</option>
-                <option value="Attack on Titan -Vol 5-8">Attack on Titan -Vol 5-8</option>
-                <option value="Naruto Box P01 Vol 1-27">Naruto Box P01 Vol 1-27</option>
-              </optgroup>
-              <optgroup label="action Figure">
-                <option value="Naruto Shippuden -PVC">Naruto Shippuden -PVC</option>
-                <option value="Ryuk -Death Note _PVC">Ryuk -Death Note _PVC</option>
-              </optgroup>
-            </select>
-            <input type="button" value="Comprar" class="btnCompra"/>
-          </div>
-          <div class="container-form">
-            <fieldset class="fsEsq">
-              <legend>Dados do Cartão:</legend>
-              <fieldset class="">
-                <legend>Bandeira:</legend>
+            <div class="container-form">
+              <fieldset class="fsEsq">
+                <legend>Dados do Cartão:</legend>
+                <fieldset class="">
+                  <legend>Bandeira:</legend>
                   <div class="cartao">
-                    <input type="radio" accept="" name="visa">Visa</input>
-                    <input type="radio" name="master">Master</input>
-                    <input type="radio" name="amex">Amex</input>
+                    <input type="radio" />
+                    <label for="fname">Visa</label>
+                    <input type="radio" />
+                    <label for="fname">Mastere</label>
+                    <input type="radio" />
+                    <label for="fname">Amex</label>
                   </div>
                 </fieldset>
                 <div class="validade">
                   <label>Validade:</label>
-                  <input
-                  type="number"
-                  class="data"
-                      /> /
-                      <input
-                      type="number"
-                      class="data"
-                      />
-                    </div>
-                    <div class="numero">
-                      <label>numero:</label>
-                      <input
-                      type="number"
-                      class="data num-cartao"
-                      />
-                    </div>
-                  </fieldset>            
-                  <div class="form-valor">
-                  <textarea id="sub-total"></textarea>
-                  <div>
-                    <label>Valor: R$</label>
-                    <input
-                    type="number"
-                    class="data valor-total"
-                    />
-                  </div>
-                  </div>
+                  <input type="number" class="data" /> /
+                  <input type="number" class="data" />
+                </div>
+                <div class="numero">
+                  <label>numero:</label>
+                  <input type="number" class="data num-cartao" />
                 </div>
               </fieldset>
-              <div>
-                <input type="submit" value="Enviar" class="botoes"/>
-                <input type="button" value="Limpar" class="botoes"/>
+              <div class="form-valor">
+                <textarea id="sub-total"></textarea>
+                <div>
+                  <label>Valor: R$</label>
+                  <input type="number" class="data valor-total" />
+                </div>
               </div>
-            </form>
-            <footer>
-              Avenida akihabara, 123 / Tel:(21)91234-5678 / contato@manganime.com.br
+            </div>
+          </fieldset>
+          <div>
+            <input
+              onclick="validar()"
+              type="button"
+              value="Enviar"
+              class="botoes"
+            />
+            <input type="reset" value="Limpar" class="botoes" />
+          </div>
+        </form>
+      <footer>
+        Avenida akihabara, 123 / Tel:(21)91234-5678 / contato@manganime.com.br
       </footer>
     </main>
+    <script src="../js/index.js"></script>
   </body>
 </html>
